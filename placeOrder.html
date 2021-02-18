@@ -1,0 +1,213 @@
+<!--
+ RC-PoS (https://appzaib.com/rc-pos)
+ Copyright 2013-2018 BlackRock Digital, LLC, 2018 Vruqa Designs, 2018 Appzaib
+ Licensed under MIT (https://github.com/appzaib/rc-pos/blob/master/LICENSE)
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>RC-POS - Inventory Reports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/css/boostrap/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body id="page-top">
+<nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+    <a class="navbar-brand mr-1" href="index.html">Thila-Pos</a>
+    <!-- Navbar Search -->
+
+</nav>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="sidebar navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">
+                <i class="fa fa-fw fa-home"></i>
+                <span>Home</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="customerManage.html">
+                <i class="fa fa-fw fa-male"></i>
+                <span>ADD CUSTOMER</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ItemManage.html">
+                <i class="fa fa-fw fa-sitemap"></i>
+                <span>ADD ITEM</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="placeOrder.html">
+                <i class="fa fa-fw fa-money"></i>
+                <span>ORDER</span>
+            </a>
+        </li>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <h6 class="dropdown-header">Inventory</h6>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#addProductModal"> <i
+                    class="fa fa-plus"></i> Add Product</a>
+
+        </div>
+    </ul>
+    <div id="content-wrapper">
+        <div class="container-fluid">
+            <!-- Breadcrumbs-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active">ORDER PLACE</li>
+            </ol>
+            <!-- Page Content -->
+            <!-- DataTables Example -->
+            <div class="card mb-3">
+                <div class="card-header bg-secondary text-white">
+                    <i class="fa fa-table"></i>
+                    ORDER PLACE
+                </div>
+            </div>
+        </div>
+<!--        order id-->
+        <label class="lable" >ORDER ID - O001</label>
+
+        <!--        panal-->
+        <div class="container">
+        <form>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="CustomerID">Customer ID</label>
+                        <input type="text" class="form-control" placeholder="" id="CustomerID">
+                    </div><br>
+                    <div class="card border-primary mb-3" style="max-width: 18rem;">
+
+                        <div class="card-body text-primary">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="ITEM ID">
+                                <br>
+                                <input type="text" class="form-control" placeholder="ITEM NAME">
+                                <br>
+                                <input type="text" class="form-control" placeholder="QTY">
+                                <br>
+                                <input type="text" class="form-control" placeholder="PRICE">
+                                <br>
+                                <a href="#" class="btn btn-success">ADD CART</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--  col-md-6   -->
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Name">Customer Name</label>
+                        <input type="text" class="form-control" placeholder="" id="Name">
+                    </div>
+                    <div class="card-body">
+                        <div class="card border-primary mb-3" style="max-width: 18rem;">
+                            <label class="lable" >TOTAL - 1111</label><br>
+
+                            <div class="card-body text-primary">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="DISCOUNT">
+                                </div>
+                            </div>
+                        </div>
+                        <label class="lable" >TOTAL WITH DISCOUNT - 1111</label>
+                    </div>
+                </div>
+
+                <!--  col-md-6   -->
+            </div>
+
+        </form>
+
+
+
+
+
+
+
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>Item ID</th>
+                            <th>Item Name</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                        <tr>
+                            <td>I001</td>
+                            <td>rice</td>
+                            <td>10</td>
+                            <td>1000</td>
+                        </tr>
+                        </tr>
+
+                        </thead>
+
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <a href="#" class="btn btn-lg btn-dark" >PLACE ORDER</a>
+                <a href="#" class="btn btn-lg btn-danger">PRINT BILL</a>
+
+            </div>
+        </div>
+
+
+<!--        </div>-->
+<!--        <div class="card-body">-->
+<!--            <div class="table-responsive">-->
+<!--                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->
+<!--                    <thead>-->
+<!--                    <tr>-->
+<!--                        <th>Item ID</th>-->
+<!--                        <th>Item Name</th>-->
+<!--                        <th>Qty</th>-->
+<!--                        <th>Price</th>-->
+<!--                    <tr>-->
+<!--                        <td>I001</td>-->
+<!--                        <td>rice</td>-->
+<!--                        <td>10</td>-->
+<!--                        <td>1000</td>-->
+<!--                    </tr>-->
+<!--                    </tr>-->
+
+<!--                    </thead>-->
+
+<!--                    </tbody>-->
+<!--                </table>-->
+<!--            </div>-->
+<!--        </div>-->
+        <!-- Sticky Footer -->
+        <footer class="sticky-footer">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto ">
+                    <br><br><br>
+                    <small class="text-muted">
+                        <p class="copyright">Thilina Dilshan copyright 2021</p>
+
+                    </small>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+</div>
+</body>
+</html>
