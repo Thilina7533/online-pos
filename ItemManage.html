@@ -1,175 +1,175 @@
-<!--
- RC-PoS (https://appzaib.com/rc-pos)
- Copyright 2013-2018 BlackRock Digital, LLC, 2018 Vruqa Designs, 2018 Appzaib
- Licensed under MIT (https://github.com/appzaib/rc-pos/blob/master/LICENSE)
--->
-<!DOCTYPE html>
-<html lang="en">
+<!--&lt;!&ndash;-->
+<!-- RC-PoS (https://appzaib.com/rc-pos)-->
+<!-- Copyright 2013-2018 BlackRock Digital, LLC, 2018 Vruqa Designs, 2018 Appzaib-->
+<!-- Licensed under MIT (https://github.com/appzaib/rc-pos/blob/master/LICENSE)-->
+<!--&ndash;&gt;-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Thila Pos - IJSE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="assets/css/boostrap/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/styles.css" rel="stylesheet">
-</head>
-<body id="page-top">
-<nav class="navbar navbar-expand navbar-dark bg-dark static-top">
-    <a class="navbar-brand mr-1" href="index.html">Thila-Pos</a>
-    <!-- Navbar Search -->
-
-
-</nav>
-<div id="wrapper">
-    <!-- Sidebar -->
-    <ul class="sidebar navbar-nav">
-        <li class="nav-item active">
-            <a class="nav-link" href="index.html">
-                <i class="fa fa-fw fa-home"></i>
-                <span>Home</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="customerManage.html">
-                <i class="fa fa-fw fa-male"></i>
-                <span>ADD CUSTOMER</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="ItemManage.html">
-                <i class="fa fa-fw fa-sitemap"></i>
-                <span>ADD ITEM</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="placeOrder.html">
-                <i class="fa fa-fw fa-money"></i>
-                <span>ORDER</span>
-            </a>
-        </li>
-        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <h6 class="dropdown-header">Inventory</h6>
-            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#addProductModal"> <i
-                    class="fa fa-plus"></i> Add Product</a>
-
-        </div>
-    </ul>
-    <div id="content-wrapper">
-        <div class="container-fluid">
-            <!-- Breadcrumbs-->
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="breadcrumb-item active">ITEM MANAGE</li>
-            </ol>
-            <!-- Page Content -->
-            <!-- DataTables Example -->
-            <div class="card mb-3">
-                <div class="card-header bg-warning text-white">
-                    <i class="fa fa-table"></i>
-                    ITEM MANAGE
-
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <form>
-
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="ItemID">Item ID</label>
-                            <input type="text" class="form-control" placeholder="" id="ItemID">
-                        </div>
-                    </div>
-                    <!--  col-md-6   -->
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="ItemName">Item Name</label>
-                            <input type="text" class="form-control" placeholder="" id="ItemName">
-                        </div>
-                    </div>
-                    <!--  col-md-6   -->
-                </div>
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<!--    <meta name="description" content="">-->
+<!--    <meta name="author" content="">-->
+<!--    <title>Thila Pos - IJSE</title>-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--    <link href="assets/css/boostrap/bootstrap.css" rel="stylesheet">-->
+<!--    <link href="assets/css/styles.css" rel="stylesheet">-->
+<!--</head>-->
+<!--<body id="page-top">-->
+<!--<nav class="navbar navbar-expand navbar-dark bg-dark static-top">-->
+<!--    <a class="navbar-brand mr-1" href="index.html">Thila-Pos</a>-->
+<!--    &lt;!&ndash; Navbar Search &ndash;&gt;-->
 
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="Qty">Qty</label>
-                            <input type="text" class="form-control" placeholder="" id="Qty">
-                        </div>
+<!--</nav>-->
+<!--<div id="wrapper">-->
+<!--    &lt;!&ndash; Sidebar &ndash;&gt;-->
+<!--    <ul class="sidebar navbar-nav">-->
+<!--        <li class="nav-item active">-->
+<!--            <a class="nav-link" href="index.html">-->
+<!--                <i class="fa fa-fw fa-home"></i>-->
+<!--                <span>Home</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--            <a class="nav-link" href="customerManage.html">-->
+<!--                <i class="fa fa-fw fa-male"></i>-->
+<!--                <span>ADD CUSTOMER</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--            <a class="nav-link" href="ItemManage.html">-->
+<!--                <i class="fa fa-fw fa-sitemap"></i>-->
+<!--                <span>ADD ITEM</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--            <a class="nav-link" href="placeOrder.html">-->
+<!--                <i class="fa fa-fw fa-money"></i>-->
+<!--                <span>ORDER</span>-->
+<!--            </a>-->
+<!--        </li>-->
+<!--        <div class="dropdown-menu" aria-labelledby="pagesDropdown">-->
+<!--            <h6 class="dropdown-header">Inventory</h6>-->
+<!--            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#addProductModal"> <i-->
+<!--                    class="fa fa-plus"></i> Add Product</a>-->
+
+<!--        </div>-->
+<!--    </ul>-->
+<!--    <div id="content-wrapper">-->
+<!--        <div class="container-fluid">-->
+<!--            &lt;!&ndash; Breadcrumbs&ndash;&gt;-->
+<!--            <ol class="breadcrumb">-->
+<!--                <li class="breadcrumb-item">-->
+<!--                    <a href="index.html">Home</a>-->
+<!--                </li>-->
+<!--                <li class="breadcrumb-item active">ITEM MANAGE</li>-->
+<!--            </ol>-->
+<!--            &lt;!&ndash; Page Content &ndash;&gt;-->
+<!--            &lt;!&ndash; DataTables Example &ndash;&gt;-->
+<!--            <div class="card mb-3">-->
+<!--                <div class="card-header bg-warning text-white">-->
+<!--                    <i class="fa fa-table"></i>-->
+<!--                    ITEM MANAGE-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="container">-->
+<!--            <form>-->
+
+<!--                <div class="row">-->
+
+<!--                    <div class="col-md-6">-->
+<!--                        <div class="form-group">-->
+<!--                            <label for="ItemID">Item ID</label>-->
+<!--                            <input type="text" class="form-control" placeholder="" id="ItemID">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash;  col-md-6   &ndash;&gt;-->
+
+<!--                    <div class="col-md-6">-->
+<!--                        <div class="form-group">-->
+<!--                            <label for="ItemName">Item Name</label>-->
+<!--                            <input type="text" class="form-control" placeholder="" id="ItemName">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash;  col-md-6   &ndash;&gt;-->
+<!--                </div>-->
 
 
-                    </div>
-                    <!--  col-md-6   -->
-
-                    <div class="col-md-6">
-
-                        <div class="form-group">
-                            <label for="Price">Price</label>
-                            <input type="number" class="form-control" id="Price" placeholder="">
-                        </div>
-                    </div>
-                    <!--  col-md-6   -->
-                </div>
-                <!--  row   -->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-6">-->
+<!--                        <div class="form-group">-->
+<!--                            <label for="Qty">Qty</label>-->
+<!--                            <input type="text" class="form-control" placeholder="" id="Qty">-->
+<!--                        </div>-->
 
 
-                    <!--  col-md-6   -->
+<!--                    </div>-->
+<!--                    &lt;!&ndash;  col-md-6   &ndash;&gt;-->
 
-                <br>
+<!--                    <div class="col-md-6">-->
 
-                <button type="ADD" class="btn btn-primary">   ADD</button>
-                <button type="DELETE" class="btn btn-danger">DELETE</button>
-                <button type="UPDATE" class="btn btn-secondary">UPDATE</button>
-            </form>
-        </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                    <tr>
-                        <th>Item ID</th>
-                        <th>Item Name</th>
-                        <th>Qty</th>
-                        <th>Price</th>
-                    <tr>
-                        <td>I001</td>
-                        <td>rice</td>
-                        <td>10</td>
-                        <td>1000</td>
-                    </tr>
-                    </tr>
+<!--                        <div class="form-group">-->
+<!--                            <label for="Price">Price</label>-->
+<!--                            <input type="number" class="form-control" id="Price" placeholder="">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash;  col-md-6   &ndash;&gt;-->
+<!--                </div>-->
+<!--                &lt;!&ndash;  row   &ndash;&gt;-->
 
-                    </thead>
 
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <!-- Sticky Footer -->
-        <footer class="sticky-footer">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto ">
-                    <br><br><br>
-                    <small class="text-muted">
-                        <p class="copyright">Thilina Dilshan copyright 2021</p>
+<!--                    &lt;!&ndash;  col-md-6   &ndash;&gt;-->
 
-                    </small>
-                </div>
-            </div>
-        </footer>
+<!--                <br>-->
 
-    </div>
-</div>
+<!--                <button type="ADD" class="btn btn-primary">   ADD</button>-->
+<!--                <button type="DELETE" class="btn btn-danger">DELETE</button>-->
+<!--                <button type="UPDATE" class="btn btn-secondary">UPDATE</button>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--        <div class="card-body">-->
+<!--            <div class="table-responsive">-->
+<!--                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">-->
+<!--                    <thead>-->
+<!--                    <tr>-->
+<!--                        <th>Item ID</th>-->
+<!--                        <th>Item Name</th>-->
+<!--                        <th>Qty</th>-->
+<!--                        <th>Price</th>-->
+<!--                    <tr>-->
+<!--                        <td>I001</td>-->
+<!--                        <td>rice</td>-->
+<!--                        <td>10</td>-->
+<!--                        <td>1000</td>-->
+<!--                    </tr>-->
+<!--                    </tr>-->
 
-</body>
-</html>
+<!--                    </thead>-->
+
+<!--                    </tbody>-->
+<!--                </table>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Sticky Footer &ndash;&gt;-->
+<!--        <footer class="sticky-footer">-->
+<!--            <div class="container my-auto">-->
+<!--                <div class="copyright text-center my-auto ">-->
+<!--                    <br><br><br>-->
+<!--                    <small class="text-muted">-->
+<!--                        <p class="copyright">Thilina Dilshan copyright 2021</p>-->
+
+<!--                    </small>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </footer>-->
+
+<!--    </div>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->
