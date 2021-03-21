@@ -72,7 +72,7 @@ $('#selectItemCode').on('click', function () {
         $("#txtItemDescription").val(Item.getIname());
         $("#txtItemPrice").val(Item.getPrice());
         $("#txtQTYOnHand").val(Item.getQty());
-        $("#txtQty").val(Item.getQty());
+        $("#txtQty").val("1");
     } else {
 
     }
