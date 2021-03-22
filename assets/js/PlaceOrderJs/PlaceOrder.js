@@ -45,7 +45,7 @@ $("#btnAddToTable").click(function () {
         var row = `<tr><td class="code">${code}</td><td>${name}</td><td>${price}</td><td>${qty}</td><td>${tot}</td>
         <td>
         <button type='button' onclick='productDelete(this);' class='btn btn-default'>
-        <img src="D:\\HTML\\Ijse-Pos\\Thila-pos\\assets\\image\\multiply_26px.png">
+       <i class="fa fa-trash"  style="color: red" aria-hidden="true"></i>
         </button>
         </td>
         </tr>`;

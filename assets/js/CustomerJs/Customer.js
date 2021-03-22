@@ -7,7 +7,7 @@ $(function () {
         $(this).parent().parent().remove();
     }));
 });
-
+generateCustomerId()
 
 
 // item event
@@ -22,7 +22,7 @@ $('#btnAddCustomer').click(function () {
 
     let res = saveCustomer(custID, custNameF, custNameL, address, phone);
     if (res) clearAllCustomerText();
-
+    generateCustomerId();
 
     // var customer = new Customer(custID, custNameF, custNameL, address, phone);
     // customerDB.push(customer);
@@ -102,6 +102,7 @@ $('#btnAddCustomer').click(function () {
                 alert("Update Faild");
             }
         }
+        generateCustomerId();
         loadAllCustomerToTheTable();
         clearAllCustomerText();
 
@@ -209,22 +210,22 @@ function updateCustomer(custID, custNameF, custNameL, address, phone) {
     }
 
     // genarate
-function generateNewId() {
-
-    var lastId = $("#dataTable3 tbody tr:last-child td:first-child").text();
-    lastId = (lastId.replace(/[C]/g, ''));
-    lastId=lastId+1;
-
-    if(lastId<=10){
-        lastId = "C00"+lastId;
-    }else if(lastId<=100){
-        lastId = "C0"+lastId;
-    }else if(lastId<1000){
-        lastId = "C"+lastId;
+function generateCustomerId() {
+    try {
+        let lastCustomerId = customerDB[customerDB.length-1].getCustomerID();
+        let newID = parseInt(lastCustomerId.substring(5, 7)) + 1;
+        if (newID < 10) {
+            $("#CustomerID").val('C00-00'+newID);
+        }else if (newID < 100) {
+            $("#CustomerID").val('C00-0'+newID);
+        } else {
+            $("#CustomerID").val('C00-'+newID);
+        }
+    } catch (e) {
+        $("#CustomerID").val('C00-001');
     }
-    return lastId;
-}
 
+}
 function CCC() {
     var input=customerDB.length;
     var text=document.getElementById('custCount');
